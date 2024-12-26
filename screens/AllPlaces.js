@@ -21,25 +21,7 @@ function AllPlaces({ route }) {
     }
   }, [isFocused]);
 
-  function deleteFunction() {
-    deletePlace("Thu Dec 26 2024 23:50:52 GMT+04000.8272565178338113");
-    console.log("Hello");
-  }
-
-  return (
-    <>
-      <PlacesList places={loadedPlaces} />
-      <View>
-        <Button style={styles.button} onPress={deleteFunction} />
-      </View>
-    </>
-  );
+  return <PlacesList places={loadedPlaces} />;
 }
 
 export default AllPlaces;
-
-const styles = StyleSheet.create({
-  button: {
-    color: "white",
-  },
-});
